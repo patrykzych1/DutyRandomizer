@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {DataService} from '../../services/data.service';
 
 @Component({
   selector: 'app-get',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get.component.css']
 })
 export class GetComponent implements OnInit {
-
-  constructor() { }
+  public items$: any;
+  constructor(private service: DataService) { }
 
   ngOnInit() {
+    this.getAll();
+
+  }
+
+  getAll() {
+    this.service.getAll().subscribe(response => {
+      this.items$ = response;
+    });
+    console.log(this.items$);
   }
 
 }
