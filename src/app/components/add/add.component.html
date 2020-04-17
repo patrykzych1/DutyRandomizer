@@ -1,13 +1,27 @@
-<form>
-  <div class = "form-group">
-    <label for="name">Imię:</label>
-    <input type="text" class="form-control" id="name"  placeholder="Imię">
-  </div>
+<body>
 
-  <div class = "form-group">
-    <label for="surname">Nazwisko:</label>
-    <input type="text" class="form-control" id="surname"  placeholder="Nazwisko">
-  </div>
+<br><br>
+<div id = "form">
+  <h1>Wprowadź dane</h1>
+  <form class ="user-data">
+    <br><br><br>
+    <div class = "form-group">
+    <div class="input-container">
+      <input id = "name" class="form-control" type = "text" required=""/>
+      <label>Imie</label>
+    </div>
+    </div>
+    <br><br><br>
+    <div class = "form-group">
+    <div class="input-container">
+      <input id = "surname" class="form-control" type = "text" required=""/><br/>
+      <label>Nazwisko</label>
+    </div>
+    </div>
 
-  <button type="submit" class="btn btn-primary" id="button" (click)="addEmployee()" >Dodaj</button>
-</form>
+    <button type="submit" class="btn btn-primary" id="button" (click)="addEmployee()" >Dodaj</button>
+
+  </form>
+</div>
+
+</body>
