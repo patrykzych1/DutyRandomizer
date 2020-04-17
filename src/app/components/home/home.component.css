@@ -11,3 +11,15 @@ body{
   min-height:100vh;
   font-family: 'Noto Sans', sans-serif;
 }
+
+
+#form{
+  text-align:center;
+  margin-left:30%;
+  margin-right:30%;
+
+  background-color: rgba(0, 0, 0, 0.87);
+  border-radius:3px;
+  padding:100px 150px;
+  color: white;
+}
