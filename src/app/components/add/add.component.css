@@ -88,9 +88,9 @@ h1 {
 }
 .input-container label{
   position:absolute;
-  top:-10px;
+  top:2px;
   left:0%;
-  font-size:13px;
+  font-size:24px;
   color:#fff;
   pointer-event:none;
   transition: all 0.5s ease-in-out;
@@ -101,7 +101,7 @@ h1 {
   border-bottom:1px solid #555;
   background:transparent;
   padding:8px 0 5px 0;
-  font-size:20px;
+  font-size:24px;
   color:#fff;
 }
 .input-container input:focus{
@@ -112,7 +112,7 @@ h1 {
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
-  top:-60;
+  top:-30px;
   font-size:10px;
 
 }
