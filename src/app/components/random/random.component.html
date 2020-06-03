@@ -36,6 +36,9 @@
 
       <mat-checkbox  class="form-check-input" id="sunday" [(ngModel)]="sunday" name = "sunday">Niedziela</mat-checkbox><br>
 
+     <mat-label>Liczba pracowników na każdy dzień:</mat-label>
+     <input type="number" matInput #amount maxlength="2" value = "1" [(ngModel)]="workersAmount" name = "workersAmount" >
+
 <br>
   <button (click)="get()">xd</button>
 

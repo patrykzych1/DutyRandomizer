@@ -4,4 +4,5 @@ export interface Dates {
   startDate: Date;
   endDate: Date;
   days: string[];
+  amountOfWorkers: number;
 }
