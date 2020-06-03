@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {AddComponent} from './components/add/add.component';
 import {GetComponent} from './components/get/get.component';
+import {RandomComponent} from './components/random/random.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,13 @@ const routes: Routes = [
   {
     path: 'get',
     component: GetComponent,
+  },
+  {
+    path: 'random',
+    component: RandomComponent
+
   }
+
 ];
 
 @NgModule({

@@ -26,6 +26,7 @@ export class AddComponent implements OnInit {
       name: ( document.querySelector('#name') as HTMLInputElement).value,
       surname: ( document.querySelector('#surname') as HTMLInputElement).value,
     };
+
     console.log(employee);
     this.service.addEmployee(employee).subscribe();
   }

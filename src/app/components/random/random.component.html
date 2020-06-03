@@ -1,0 +1,45 @@
+<body>
+
+<br><br>
+<div id = "form">
+  <h1>Opcje losowania</h1>
+  <form class ="user-data">
+
+    <label>Od:</label>
+    <mat-form-field>
+      <input matInput [matDatepicker]="from" [(ngModel)]="fromDate" name = "from">
+      <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
+      <mat-datepicker #from></mat-datepicker>
+    </mat-form-field> <br>
+    <label>Do:</label>
+    <mat-form-field>
+      <input matInput [matDatepicker]="to" [(ngModel)]="toDate" name = "to">
+      <mat-datepicker-toggle matSuffix [for]="to"></mat-datepicker-toggle>
+      <mat-datepicker #to></mat-datepicker>
+    </mat-form-field><br>
+
+
+      <mat-checkbox  class="form-check-input" id="monday" [(ngModel)]="monday" name = "monday">Poniedziałek</mat-checkbox><br>
+
+
+      <mat-checkbox   class="form-check-input" id="tuesday" [(ngModel)]="tuesday" name = "tuesday">Wtorek</mat-checkbox><br>
+
+      <mat-checkbox  class="form-check-input" id="wednesday" [(ngModel)]="wednesday" name = "wednesday">Środa</mat-checkbox><br>
+
+      <mat-checkbox   class="form-check-input" id="thursday" [(ngModel)]="thursday" name = "thursday">Czwartek</mat-checkbox><br>
+
+
+      <mat-checkbox class="form-check-input" id="friday" [(ngModel)]="friday" name = "friday">Piątek</mat-checkbox><br>
+
+
+      <mat-checkbox  class="form-check-input" id="saturday" [(ngModel)]="saturday" name = "saturday">Sobota</mat-checkbox><br>
+
+      <mat-checkbox  class="form-check-input" id="sunday" [(ngModel)]="sunday" name = "sunday">Niedziela</mat-checkbox><br>
+
+<br>
+  <button (click)="get()">xd</button>
+
+  </form>
+
+</div>
+</body>

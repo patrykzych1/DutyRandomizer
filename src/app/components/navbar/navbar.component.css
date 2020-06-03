@@ -24,8 +24,6 @@ MENU STYLES
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  margin-left:20%;
-
 }
 
 .menu__group{
@@ -109,6 +107,8 @@ body{
   background-color: rgba(0, 0, 0, 0.87);
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height:12%;
 }
 
 .page{

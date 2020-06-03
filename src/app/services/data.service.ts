@@ -3,6 +3,7 @@ import {HttpClient, HttpHeaders, HttpErrorResponse} from '@angular/common/http';
 import {Employee} from '../interfaces/Employee';
 import {catchError} from 'rxjs/operators';
 import {Observable} from 'rxjs';
+import {Dates} from "../interfaces/Dates";
 
 
 
@@ -25,5 +26,13 @@ export class DataService {
           'Content-Type': 'application/json'
         })
       });
+  }
+
+  getRandomDuty(dates: Dates): Observable<Dates> {
+    return this.http.post<Dates>('http://localhost:8080/api/random', dates, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    });
   }
 }
