@@ -113,7 +113,7 @@ body{
 
 .page{
   box-sizing: border-box;
-  max-width: 640px;
+  max-width: 590px;
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -121,4 +121,5 @@ body{
   order: 1;
   margin: auto;
 }
+
 

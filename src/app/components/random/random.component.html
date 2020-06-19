@@ -2,21 +2,23 @@
 
 <br><br>
 <div id = "form">
-  <h1>Opcje losowania</h1>
+  <h1>Opcje losowania</h1><br>
   <form class ="user-data">
-
-    <label>Od:</label>
+    <div class="many1">
+      <br>
+    <h5>Wybierz zakres</h5>
+    <label>Od: </label>&nbsp;
     <mat-form-field>
       <input matInput [matDatepicker]="from" [(ngModel)]="fromDate" name = "from">
       <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
       <mat-datepicker #from></mat-datepicker>
     </mat-form-field> <br>
-    <label>Do:</label>
+    <label>Do: </label>&nbsp;
     <mat-form-field>
       <input matInput [matDatepicker]="to" [(ngModel)]="toDate" name = "to">
       <mat-datepicker-toggle matSuffix [for]="to"></mat-datepicker-toggle>
       <mat-datepicker #to></mat-datepicker>
-    </mat-form-field><br>
+    </mat-form-field><br><h5>Wybierz dni</h5>
 
 
       <mat-checkbox  class="form-check-input" id="monday" [(ngModel)]="monday" name = "monday">Poniedziałek</mat-checkbox><br>
@@ -34,15 +36,27 @@
 
       <mat-checkbox  class="form-check-input" id="saturday" [(ngModel)]="saturday" name = "saturday">Sobota</mat-checkbox><br>
 
-      <mat-checkbox  class="form-check-input" id="sunday" [(ngModel)]="sunday" name = "sunday">Niedziela</mat-checkbox><br>
+      <mat-checkbox  class="form-check-input" id="sunday" [(ngModel)]="sunday" name = "sunday">Niedziela</mat-checkbox><br> </div>
+      <br>
+    <div class="many">
+      <br>
 
      <mat-label>Liczba pracowników na każdy dzień:</mat-label>
-     <input type="number" matInput #amount maxlength="2" value = "1" [(ngModel)]="workersAmount" name = "workersAmount" >
+     <input type="number" matInput #amount maxlength="2" value = "1" [(ngModel)]="workersAmount" name = "workersAmount" placeholder="1" >
+    </div>
 
-<br>
-  <button (click)="get()">xd</button>
+  <button type="submit" class="btn btn-primary" id="button" (click)="get()">losuj dyżury</button>
 
   </form>
 
 </div>
+
+
 </body>
+
+<footer class="page-footer font-small blue foot">
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Wykonawcy Patryk Zych | Arkadiusz Kopacz | Tomasz Grzesik
+  </div>
+
+</footer>
